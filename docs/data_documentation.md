@@ -1,11 +1,11 @@
-#Data Documentation
+# Data Documentation
 
 This project uses artist data from three museums:
 1. Metropolitan Musuem of Art (Met)
 2. Museum of Modern Art (MoMA)
 3. National Gallery of Art (NGA)
 
-#The Datasets
+# The Datasets
 |""| Met | MoMA | NGA
 |File| MetObjects.csv | Artists.csv | constituents.csv |
 |Source| [metmuseum/openaccess](https://github.com/metmuseum/openaccess) | [MuseumofModernArt/collection](https://github.com/MuseumofModernArt/collection) | [NationalGalleryOfArt/opendata](https://github.com/NationalGalleryOfArt/opendata) |
@@ -14,7 +14,7 @@ This project uses artist data from three museums:
 |Each row| One artwork | One artist | One person or group linked to artwork |
 *Since CC0 means the data is public domain, we are edit it freely without needing permission
 
-#How to get the data
+# How to get the data
 
 From the main project folder, run this:
 1. pip install pandas requests
@@ -30,7 +30,7 @@ From the main project folder, run this:
 | Artists.csv | 88df2b9198b829994fbdd26aa1bf7f15f46cafe3244ac6098412ac606b281cdb |
 | constituents.csv | ee511c37f9d1b31ae985eb9d779a89754bf81966d1f0a380f1522a11545772ba |
 
-#Results from Completeness
+# Results from Completeness
 This is the table that shows up in the completeness file in results which shows the percent of artists in each museum that have each piece of info. For NGA, only individual artist were counted, not donors or companies.
 
 | "" | Met | MoMA | NGA |
@@ -49,7 +49,7 @@ What does this exactly mean:
 2. Only MoMA has usable gender data because NGA does not record gender and the Met only records "females", leaving things incomplete.
 3. MoMA has a low death year because most of the artists are most likely still alive.
 
-#What to address specifically in cleaning
+# What to address specifically in cleaning
 1. The same artist ID is sometimes used in the Met's data if a certain artwork had several artists. Met artists right now are counted by name instead.
 2. The Met lists several artist in one cell
 3. The Met stores IDs as web links, instead of just a numbered ID
