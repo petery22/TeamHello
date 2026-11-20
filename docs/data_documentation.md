@@ -6,12 +6,14 @@ This project uses artist data from three museums:
 3. National Gallery of Art (NGA)
 
 # The Datasets
-|""| Met | MoMA | NGA
-|File| MetObjects.csv | Artists.csv | constituents.csv |
-|Source| [metmuseum/openaccess](https://github.com/metmuseum/openaccess) | [MuseumofModernArt/collection](https://github.com/MuseumofModernArt/collection) | [NationalGalleryOfArt/opendata](https://github.com/NationalGalleryOfArt/opendata) |
-|License| CC0 (public doman) | CC0 (public domain) | CC0 (public domain) |
-|Size| 341 MB | 1.1 MB | 4.5 MB |
-|Each row| One artwork | One artist | One person or group linked to artwork |
+|| Met | MoMA | NGA |
+| --- | --- | --- | --- |
+| File| MetObjects.csv | Artists.csv | constituents.csv |
+| Source | [metmuseum/openaccess](https://github.com/metmuseum/openaccess) | [MuseumofModernArt/collection](https://github.com/MuseumofModernArt/collection) | [NationalGalleryOfArt/opendata](https://github.com/NationalGalleryOfArt/opendata) |
+| License | CC0 (public doman) | CC0 (public domain) | CC0 (public domain) |
+| Size | 341 MB | 1.1 MB | 4.5 MB |
+| Each row | One artwork | One artist | One person or group linked to artwork |
+
 *Since CC0 means the data is public domain, we are edit it freely without needing permission
 
 # How to get the data
@@ -26,6 +28,7 @@ From the main project folder, run this:
 *Checksums: the download script checks each file against the sha-256 checksums below to make sure it is the same version that we used.
 
 | File | sha-256 checksum |
+| --- | --- |
 | MetObjects.csv | f53eb3bd6e321a051ce11ad40bd7f5ee204c6c534cb07508f0f617d03bea0d3a |
 | Artists.csv | 88df2b9198b829994fbdd26aa1bf7f15f46cafe3244ac6098412ac606b281cdb |
 | constituents.csv | ee511c37f9d1b31ae985eb9d779a89754bf81966d1f0a380f1522a11545772ba |
@@ -33,7 +36,8 @@ From the main project folder, run this:
 # Results from Completeness
 This is the table that shows up in the completeness file in results which shows the percent of artists in each museum that have each piece of info. For NGA, only individual artist were counted, not donors or companies.
 
-| "" | Met | MoMA | NGA |
+|| Met | MoMA | NGA |
+| --- | --- | --- | --- |
 | Number of artists | 62487 | 16018 | 16003 |
 | Name | 100% | 100% | 100% |
 | Nationality | 84.3% | 83.7% | 98.2% |
